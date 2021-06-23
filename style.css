@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Syncopate', sans-serif;
+    background-color: rgb(128, 59, 70);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pads {
+    height: 250px;
+    border-radius: 15px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pads > div {
+    box-shadow: 5px 5px 2px #26001B;
+    border-radius: 10px;
+    margin: 10px;
+    height: 230px;
+    width: 100px;
+}
+
+.pad1 {
+    background: #C1A1D3;
+}
+
+.pad2 {
+    background: #F14668;
+
+}
+.pad3 {
+    background: #FFE268
+}
+
+.pad4 {
+    background: #81B214;
+}
+
+.pad5 {
+    background: #046582
+}
+
+.pad6 {
+    background: #EF8D32;
+}
+
+.visual > div {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    z-index: 1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 10%;
+        left: 20%;
+    }
+    
+    50% {
+        bottom: 95%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 5%;
+        left: 90%;
+    }
+}
